@@ -4,6 +4,8 @@ session_start();
 if ($_SESSION['status'] != "login") {
     header("location:login.php?pesan=belum_login");
 }
+$data_user = $_SESSION['data'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -41,7 +43,7 @@ if ($_SESSION['status'] != "login") {
         </div>
         <div class="mobile_nav_items">
             <a href="index.php?pagehome.php"><i class="fas fa-home"></i><span>Dashboard</span></a>
-            <a href="index.php?page=chat"><i class="fas fa-edit"></i><span>Chatting</span></a>
+            <a href="index.php?&loginField=login&redirect=&userName=<?=$data_user["username"]?>&password=<?=$data_user["password"]?>&channelName=<?=$data_user["channelPublic"]?>&lang=id"><i class="fas fa-edit"></i><span>Chatting</span></a>
             <a href="index.php?page=katalog"><i class="fas fa-desktop"></i><span>Katalog Obat</span></a>
         </div>
     </div>
@@ -52,7 +54,7 @@ if ($_SESSION['status'] != "login") {
             <h4> Selamat Datang <?php echo $_SESSION['username']; ?></h4>
         </div>
         <a href="index.php?pagehome.php"><i class="fas fa-home"></i><span>Dashboard</span></a>
-            <a href="index.php?page=chat"><i class="fas fa-edit"></i><span>Chatting</span></a>
+            <a href="../chat?rolePath=dokter&loginField=login&redirect=&userName=<?=$data_user["username"]?>&password=<?=$data_user["password"]?>&channelName=<?=$data_user["channelPublic"]?>&lang=id"><i class="fas fa-edit"></i><span>Chatting</span></a>
             <a href="index.php?page=katalog"><i class="fas fa-desktop"></i><span>Katalog Obat</span></a>
     
     </div>

@@ -19,6 +19,9 @@ $cek = mysqli_num_rows($data);
 
 if ($cek > 0) {
 	$_SESSION['username'] = $username;
+    $_SESSION['data'] = mysqli_fetch_assoc(
+
+    );
 	$_SESSION['status'] = "login";
 	header("location:index.php");
 } else {

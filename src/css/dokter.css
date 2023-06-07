@@ -1,0 +1,1204 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: #F8FAFC;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Style Navbar */
+.navbar {
+    width: 1440px;
+    height: 80px;
+
+    background: #FFFFFF;
+    /* box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1); */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.navbar-konten {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 382px;
+
+    position: relative;
+    width: 1240.09px;
+    height: 50px;
+    left: 100px;
+    top: 15px;
+}
+
+.navbar-konten-kiri {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    width: 170.09px;
+    height: 50px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.navbar-konten-kanan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+
+    height: 35px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.nav-kanan-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+
+    height: 25px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.nav-kanan-text a {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #808080;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.nav-kanan-text a.aktif {
+    color: #2482C6;
+    text-decoration: none;
+}
+
+.nav-kanan-text a:hover {
+    text-decoration: underline;
+}
+
+.nav-kanan-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 25px;
+    gap: 10px;
+
+    height: 35px;
+
+    background: #2482C6;
+    border-radius: 30px;
+    border: 0px solid transparent;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.nav-kanan-button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Style Cari Dokter */
+.cari-dokter {
+    width: 1440px;
+    height: 1759px;
+
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* (Cari Dokter - Konten) */
+.cari-dokter-konten {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 100px;
+
+    position: relative;
+    width: 1240px;
+    height: 1659px;
+    left: 100px;
+    top: 50px;
+}
+
+.cari-dokter-konten-atas {
+    width: 1240px;
+    height: 50px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cari-dokter-konten-bawah {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+
+    width: 1240px;
+    height: 1509px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* (Konten Atas - Search) */
+.cd-atas-search {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+
+    position: relative;
+    width: 1240px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+}
+
+input.search {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 25px 12px 25px;
+    gap: 10px;
+
+    width: 1075px;
+
+    border: 2px solid #808080;
+    border-radius: 50px;
+
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #808080;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+button.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    padding: 10px 52px;
+    gap: 10px;
+
+    width: 150px;
+
+    background: #42AB01;
+    border: 0px solid transparent;
+    border-radius: 50px;
+
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* (Konten Bawah - Bawah Kiri) */
+.cd-bawah-kiri {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+
+    width: 250px;
+    height: 931px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* (Cari Dokter - List Kota) */
+.cd-list-kota {
+    box-sizing: border-box;
+
+    width: 250px;
+    height: 453px;
+
+    border: 1.5px solid #808080;
+    border-radius: 10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cd-header-lk {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 155px 13px 25px;
+    gap: 10px;
+
+    position: relative;
+    width: 100%;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+
+    background: #F8FAFC;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cd-header-lk p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #2482C6;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cd-isi-lk {
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+    height: 402px;
+
+    border-radius: 0px 0px 10px 10px;
+    background: #FFFFFF;
+}
+
+.cd-blok {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    gap: 10px;
+
+    top: 15px;
+    margin-left: 15px;
+}
+
+.cd-blok input {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+
+    border: 0.75px solid #808080;
+    border-radius: 100px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cd-blok label {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #808080;
+}
+
+/* (Cari Dokter - List Spesialis) */
+.cd-list-spesialis {
+    box-sizing: border-box;
+
+    width: 250px;
+    height: 453px;
+
+    border: 1.5px solid #808080;
+    border-radius: 10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;  
+}
+
+.cd-header-s {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13px 123px 13px 25px;
+    gap: 10px;
+    
+    position: relative;
+    width: 100%;
+    height: 48px;
+    
+    background: #F8FAFC;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cd-header-s p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #2482C6;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cd-isi-s {
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+    height: 402px;
+
+    border-radius: 0px 0px 10px 10px;
+    background: #FFFFFF;
+}
+
+/* (Konten Bawah - Kanan) */
+.cd-bawah-kanan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+
+    width: 940px;
+    height: 1509px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* (Bawah Kanan - List Dokter) */
+.cd-list-dokter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+    
+    width: 940px;
+    height: 1409px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* (List Dokter Baris 1-2-3) */
+.cd-list-dokter-b1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    
+    width: 940px;
+    height: 453px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cd-list-dokter-b2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    
+    width: 940px;
+    height: 453px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.cd-list-dokter-b3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    
+    width: 940px;
+    height: 453px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+/* (Card 1-2-3) */
+article.card-1 {
+    width: 300px;
+    height: 455px;
+    
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+article.card-2 {
+    width: 300px;
+    height: 455px;
+    
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+article.card-3 {
+    width: 300px;
+    height: 455px;
+    
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+/* (Thumbnail) */
+.thumb {
+    position: relative;
+    width: auto;
+    height: 328px;
+    left: 0px;
+    top: 0px;
+
+    background-size: cover;
+}
+
+.thumb img {
+    position: relative;
+    width: 300px;
+    height: 328px;
+    left: 0px;
+    top: 0px;
+}
+
+/* (Detail) */
+article .detail {
+    position: relative;
+    width: 300px;
+    height: 453px;
+    left: calc(50% - 300px/2);
+    top: 0px;
+    
+    background: #FFFFFF;
+    transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+
+article:hover .detail {
+    transform: translateY(-330px);
+}
+
+/* (Detail Konten) */
+article .detail .det-konten {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    left: 25px;
+    top: 25px;
+}
+
+/* (Detail Konten Atas) */
+.det-konten-atas {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 26px;
+    
+    width: 250px;
+    height: 93px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.det-ka-lagi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 174px;
+    height: 93px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.det-ka-lagi p {
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #2482C6;
+}
+
+.det-kal-lagi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+    
+    height: 15px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.det-kal-lagi p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    
+    color: #808080;
+}
+
+.det-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    gap: 10px;
+    
+    width: 143px;
+    height: 15px;
+    
+    background: #F8FAFC;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.det-kata {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.det-kata p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    
+    color: #808080;
+}
+
+.det-kata p.biru {
+    color: #2482C6;
+}
+
+/* (Detail Konten Tengah) */
+.det-konten-tengah {
+    width: 100%;
+    height: 0px;
+    
+    border: 0.5px solid #808080;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* (Detail Konten Bawah) */
+.det-konten-bawah {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    
+    width: 250px;
+    height: 177px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+p.judul {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #808080;
+}
+
+.det-kb-subjudul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.det-kb-subjudul p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    
+    color: #808080;
+}
+
+/* (Detail Button) */
+button.det-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px 20px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 91px;
+    height: 24px;
+    left: 25px;
+    bottom: 25px;
+    
+    background: #2482C6;
+    border-radius: 2.5px;
+    border: 0px solid transparent;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+}
+
+button.det-button a {
+    text-decoration: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+}
+
+/* (Bawah Kanan - Button) */
+.cd-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    
+    width: 516.49px;
+    height: 50px;
+    
+    border: 1px solid #808080;
+    border-radius: 30px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* (Button - Kiri) */
+.cd-button-kiri {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 10px;
+    
+    width: 64.74px;
+    height: 45px;
+    
+    border-radius: 30px 0px 0px 30px;
+    cursor: pointer;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* (Button - Tengah) */
+.cd-button-tengah {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 9px 20px;
+    gap: 20px;
+    
+    width: 387px;
+    height: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.no-hal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7.5px;
+    gap: 10px;
+    
+    width: 30px;
+    height: 32px;
+    
+    border-radius: 2.5px;
+    cursor: pointer;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.no-hal p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+
+    display: flex;
+    align-items: center;
+    
+    color: #808080;
+}
+
+.no-hal.aktif {
+    background: #2482C6;
+}
+
+.no-hal.aktif p {
+    color: #FFFFFF;
+}
+
+.no-hal:hover {
+    background: #F8FAFC;
+}
+
+.no-hal.aktif:hover {
+    background: #2482C6;
+}
+
+/* (Button - Kanan) */
+.cd-button-kanan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 10px;
+    
+    width: 64.74px;
+    height: 45px;
+    
+    border-radius: 30px 0px 0px 30px;
+    cursor: pointer;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Style Footer */
+.footer {
+    width: 1440px;
+    height: 400px;
+    
+    background: #2482C6;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+}
+
+.footer-konten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 30px;
+
+    position: relative;
+    width: 1240.06px;
+    height: 313px;
+    left: 100px;
+    top: 40px;
+}
+
+.footer-konten-atas {
+    position: absolute;
+    width: 1240px;
+    height: 180px;
+    left: 0px;
+    top: 20px;
+}
+
+.footer-konten-tengah {
+    position: absolute;
+    width: 1240px;
+    height: 1.5px;
+    left: 0px;
+    top: 220px;
+    
+    background: #FFFFFF;
+    border-radius: 1px;
+}
+
+.footer-konten-bawah {
+    position: absolute;
+    width: 1240.06px;
+    height: 32px;
+    left: 0px;
+    top: 261px;
+}
+
+.f-konten-atas-a {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 1240px;
+    height: 180px;
+    left: 0px;
+    top: 0px;
+}
+
+.f-konten-atas-kiri {
+    width: 420px;
+    height: 180px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.f-konten-atas-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    position: absolute;
+    width: 300px;
+    height: 104px;
+    left: 0px;
+    top: 0px;
+}
+
+.f-konten-atas-logo p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.f-konten-atas-kanan {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    width: 820px;
+    height: 180px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.f-konten-atas-menu {
+    width: 200px;
+    height: 180px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.f-konten-atas-menu span {
+    position: relative;
+    width: 69px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.f-konten-atas-menu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    position: relative;
+    width: 200px;
+    height: 80px;
+    left: 0px;
+    top: 20px;
+}
+
+.f-konten-atas-menu-link p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.f-konten-bawah-a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+
+    position: absolute;
+    width: 1240.29px;
+    height: 24px;
+    left: 0px;
+    top: 4px;
+}
+
+.f-konten-bawah-kiri p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.f-konten-bawah-kanan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.f-konten-bawah-kanan p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.f-sosial-media {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

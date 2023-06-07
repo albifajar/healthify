@@ -1,0 +1,120 @@
+.wrapper{
+    width:950px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.wrapper .title {
+    background: #0089ff;
+    color: white;
+    line-height: 2.5;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.wrapper .box {
+    border: 1px solid #efefef;
+    padding: 10px 15px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.wrapper .box .item {
+    display: flex;
+    float: left;
+    margin: 10px 0;
+}
+
+.wrapper .box .item .icon {
+    background: #0089ff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+                                                                                                                                                                                                                                                                              
+
+.wrapper .box .item .msg {
+    background: #0089ff;
+    color: white;
+    border-radius: 10px;
+    width: 400px;
+    margin-left: 10px;
+}
+
+.wrapper .box .item .msg p {
+    padding: 10px;
+}
+
+.wrapper .box .item.right {
+    float: right;
+}
+
+.wrapper .box .item.right .msg {
+    background: #efefef;
+    color: #333;
+}
+
+.wrapper .typing-area {
+    width: 99%;
+    background: #efefef;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.wrapper .typing-area .input-field {
+    width: 99%;
+    position: relative;
+}
+
+.wrapper .typing-area .input-field input {
+    width: 91%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    padding-right: 70px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s all ease;
+}
+
+.wrapper .typing-area .input-field input:focus {
+    border-color: #0089ff;
+}
+
+.wrapper .typing-area .input-field button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid #0089ff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #0089ff;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all ease;
+}
+
+.wrapper .typing-area .input-field button:hover {
+    background: #0089ff;
+    color: white;
+}
+
+.wrapper .typing-area .input-field input:valid ~ button {
+    opacity: 1;
+    pointer-events: auto;
+}

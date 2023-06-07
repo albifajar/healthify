@@ -1,0 +1,449 @@
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Style Artikel */
+.artikel {
+    width: 1440px;
+    height: 1718px;
+    
+    background: #FFFFFF;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.artikel-konten {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+   
+    position: relative;
+    width: 1240px;
+    height: 1558px;
+    left: 100px;
+    top: calc(50% - 1558px/2);
+}
+
+/* (Artikel - Konten Atas) */
+.artikel-konten-atas {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    
+    width: 1240px;
+    height: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.artikel-ka-search {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+
+    position: relative;
+    width: 1240px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+}
+
+input.search {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 25px 12px 25px;
+    gap: 10px;
+
+    width: 1075px;
+
+    border: 2px solid #808080;
+    border-radius: 50px;
+
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #808080;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+button.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    padding: 10px 52px;
+    gap: 10px;
+
+    width: 150px;
+
+    background: #42AB01;
+    border: 0px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* (Artikel - Konten Tengah) */
+.artikel-konten-tengah {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    
+    width: 1240px;
+    height: 460px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.artikel-konten-tengah p {
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    
+    color: #808080;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.swiper1 {
+    width: 1240px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1240px;
+    height: 400px;
+}
+
+.swiper-wrapper {
+    width: 1240px;
+    height: 400px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 1240px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#satu {
+    background-image: url(../../assets/img/content/artikel/artiker-slider-1.png);
+}
+
+#dua {
+    background-image: url(../../assets/img/content/artikel/artiker-slider-2.png);
+}
+
+#tiga {
+    background-image: url(../../assets/img/content/artikel/artiker-slider-3.png);
+}
+
+#empat {
+    background-image: url(../../assets/img/content/artikel/artiker-slider-4.png);
+}
+
+#lima {
+    background-image: url(../../assets/img/content/artikel/artiker-slider-5.png);
+}
+
+#enam {
+    background-image: url(../../assets/img/content/artikel/artiker-slider-6.png);
+}
+
+.swiper-slide .bayangan {
+    position: absolute;
+    width: 1240px;
+    height: 400px;
+    
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.slider-konten p {
+    position: absolute;
+    width: 648px;
+    height: 78px;
+    left: 40px;
+    bottom: 40px;
+    
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+}
+
+/* (Artikel - Konten Bawah) */
+.artikel-konten-bawah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+    
+    width: 1238.48px;
+    height: 948px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.artikel-kb-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    
+    width: 1238.48px;
+    height: 835px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.artikel-kb-1 p {
+    font-family: 'Quicksand Light';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    
+    color: #808080;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.artikel-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+   
+    width: 1233.6px;
+    height: 773.99px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.artikel-box-b1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    
+    width: 1233.6px;
+    height: 379.5px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 33px 23px;
+    gap: 20px;
+    
+    width: 400.53px;
+    height: 379.5px;
+    
+    background: #FFFFFF;
+    
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+#box-1 {
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#box-2 {
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#box-3 {
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.box img {
+    width: 354.53px;
+    height: 190.5px;
+
+    border-radius: 12px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+p.box-judul {
+    width: 354.2px;
+    height: 33px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    
+    color: #2482C6;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+p.box-isi {
+    width: 354.2px;
+    height: 50px;
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    
+    color: #808080;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.artikel-box-b2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    
+    width: 1233.6px;
+    height: 379.5px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.artikel-kb-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    
+    height: 63px;
+    
+    background: transparent;
+    border: 3px solid #2482C6;
+    border-radius: 56px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    
+    color: #2482C6;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+

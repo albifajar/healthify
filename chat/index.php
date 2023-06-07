@@ -8,6 +8,14 @@
  * @link https://blueimp.net/ajax/
  */
 
+if(isset($_GET['logout'])) {
+    header('Location: ../after_login/healthdoc.php');
+}
+
+if(isset($_GET["password"])){
+    header('Location: index.php?channelName='.$_GET["channelName"]."&lang=".$_GET["lang"]);
+}
+
 // Suppress errors:
 ini_set('display_errors', 0);
 

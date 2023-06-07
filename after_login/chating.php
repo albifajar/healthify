@@ -131,7 +131,7 @@ mysqli_close($koneksi);
               </div>
             </div>
           </div>
-          <!-- <div class="block unread">
+          <div class="block unread">
             <div class="blockimg">
               <img src="vendor/img/doc/dokter_yura.png" class="cover" />
             </div>
@@ -145,8 +145,8 @@ mysqli_close($koneksi);
                 <b>1</b>
               </div>
             </div>
-          </div> -->
-          <!-- <div class="block unread">
+          </div>
+          <div class="block unread">
             <div class="blockimg">
               <img src="vendor/img/doc/profile_dokter 2.png" class="cover" />
             </div>
@@ -160,8 +160,8 @@ mysqli_close($koneksi);
                 <b>1</b>
               </div>
             </div>
-          </div> -->
-          <!-- <div class="block">
+          </div>
+          <div class="block">
             <div class="blockimg">
               <img src="vendor/img/doc/profile_dokter 1.png" class="cover" />
             </div>
@@ -174,7 +174,7 @@ mysqli_close($koneksi);
                 <p>Lorem ipsum dolor sit amet, sed diam voluptua.</p>
               </div>
             </div>
-          </div> -->
+          </div>
           <form method="post">
             <div class="endChat">
               <div>

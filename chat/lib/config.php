@@ -28,7 +28,7 @@ $config['dbConnection']['user'] = 'root';
 // Database password:
 $config['dbConnection']['pass'] = 'root';
 // Database name:
-$config['dbConnection']['name'] = 'chat';
+$config['dbConnection']['name'] = 'healthify';
 // Database type:
 $config['dbConnection']['type'] = null;
 // Database link:

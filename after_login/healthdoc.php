@@ -1,7 +1,10 @@
 <?php
 include '../config.php';
+session_start();
+
 $list_docter = mysqli_query($koneksi, "SELECT * FROM dokter");
 $list_docter = mysqli_fetch_all($list_docter, MYSQLI_ASSOC);
+
 ?>
 
 <!DOCTYPE html>
@@ -140,8 +143,8 @@ $list_docter = mysqli_fetch_all($list_docter, MYSQLI_ASSOC);
                                 <form action="../chat" method="GET">
                                     <input type="hidden" name="login" id="loginField" value="login"/>
                                     <input type="hidden" name="redirect" id="redirectField" value=""/>
-                                    <input type="hidden" name="userName" value="user"/>
-                                    <input type="hidden" name="password" value="user"/>
+                                    <input type="hidden" name="userName" value="<?=$_SESSION['data']['username']?>"/>
+                                    <input type="hidden" name="password" value="<?=$_SESSION['data']['password']?>"/>
                                     <input type="hidden" name="channelName" value="<?= $row['channelPublic'] ?>"/>
                                     <input type="hidden" name="lang" value="in"/>
                                     <button class="det-button" type="submit">Mulai Chat</button>

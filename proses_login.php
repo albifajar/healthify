@@ -19,6 +19,7 @@ $cek = mysqli_num_rows($data);
 
 if ($cek > 0) {
 	$_SESSION['email'] = $email;
+    $_SESSION['data'] = mysqli_fetch_assoc($data);
 	$_SESSION['status'] = "login";
 	header("location:after_login/index.php");
 } else {
